@@ -9,7 +9,11 @@ JavaScriptによるDOM操作やイベント処理、タイマー処理を学ぶ�
 
 ## デモ画面
 
-※ スクリーンショットを掲載予定
+初期画面
+![alt text](screenshots/home.png)
+
+おみくじ実行後
+![alt text](screenshots/result.png)
 
 ---
 
