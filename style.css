@@ -21,7 +21,7 @@ body {
     text-align: center;
     padding: 10px;
     border: double 20px #fe0303;
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,9 +66,8 @@ body {
 }
 
 .omikuji-result > img {
-    width: 250px;
     max-width:100%;
-    height:auto;
+    height: auto;
 }
 
 .omikuji-button {
