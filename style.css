@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fe0303;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: "Yu Mincho", "Hiragino Mincho", "Hiragino Mincho Pro", serif;
+    padding: 20px;
+    max-width: 480px;
+    min-height: 100vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.omikuji {
+    text-align: center;
+    padding: 10px;
+    border: double 20px #fe0303;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.omikuji-headline {
+    margin: 0 0 80px;
+    font-size: 40px;
+    background-color: #fe0303;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+.omikuji-headline::after {
+    content: "- Omikuji App -";
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    color: #fe0303;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    5% { transform: rotate(10deg); }
+    10% { transform: rotate(-10deg); }
+    15% { transform: rotate(10deg); }
+    20% { transform: rotate(-10deg); }
+    25% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.omikuji-result {
+    margin-bottom: 30px;
+}
+
+.omikuji-result.shake {
+    animation: shake 2.5s ease-in-out;
+}
+
+.omikuji-result > img {
+    width: 250px;
+    max-width:100%;
+    height:auto;
+}
+
+.omikuji-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #fe0303;
+    color: #fff;
+    border: double 10px #fff;
+    font-family: "Yu Mincho", "Hiragino Mincho", "Hiragino Mincho Pro", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.omikuji-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
